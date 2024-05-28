@@ -1,0 +1,65 @@
+@import '../../styles/main.scss';
+
+.hero{
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 100px 50px 100px;
+    width: 90%;
+    &-img{
+        border-radius: 25px;
+        width: 100%;
+        max-height: 233px;
+        object-fit: cover;
+        z-index: 1;
+    }   
+    &-text{
+        position: absolute;
+        font-size: 48px;
+        font-weight: 500;
+        z-index: 3;
+    }
+    &-overlay{
+        width: 90%;
+        height: 233px;
+        border-radius: 25px;
+        background-color: black;
+        opacity: 65%;
+        position: absolute;
+        z-index: 2;
+    }
+    @media (max-width:800px) {
+        margin: 30px 0px 22px 0px;
+        justify-content: flex-start;
+        width: 90%;
+        &-overlay {
+            width: 90%;
+            max-height: 111px;
+        }
+        &-overlay-about{
+            width: 90%;
+            max-height: 223px;
+        }
+        &-img {
+            border-radius: 25px;
+            width: 100%;
+            max-height: 111px;
+            object-fit:cover;
+        }
+        &-about{
+            max-height: 223px;
+
+        }
+        &-text{
+            font-size: 24px;
+            width: 216px;
+            margin-left: 16px;
+        }
+    }
+    @media (min-width: 1921px) {
+        &-overlay{
+            width: 54%;
+        }
+    }
+}

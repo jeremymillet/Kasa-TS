@@ -1,0 +1,92 @@
+@import "../../styles/main.scss";
+
+.carousel {
+  width: 90%;
+  margin-bottom: 24px;
+   @media (max-width: 800px) {
+        margin-top: 7px;
+    }
+  &-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 90%;
+    top: 330px;
+    z-index: 2;
+    @media (max-width: 800px) {
+        top: 180px;
+    }
+    @media (min-width: 1921px) {
+        width: 54%;
+    }
+  }
+  &-img {
+    display: none;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    max-height: 500px;
+    height: 500px;
+    @media (max-width:800px) {
+        max-height:225px;
+        height: 225px;
+    }
+  }
+  &-counter {
+    position: relative;
+    top: 200px;
+    color: $text-color;
+    @media (max-width:800px) {
+        display: none;
+    }
+  }
+  &-next-btn,&-previous-btn {
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    @media (max-width:800px) {
+        width: 24px;
+    }
+  }
+  &-overlay {
+    width: 90%;
+    height: 500px;
+    max-height: 500px;
+    border-radius: 25px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 70%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    position: absolute;
+    z-index: 2;
+    @media (max-width: 800px) {
+         display: none;
+    }
+    @media (min-width: 1921px) {
+        width: 54%;
+    }
+  }
+  
+}
+.none{
+  display: none;
+}
+.active{
+  display: flex;
+  animation: imgAnimation 0.5s;
+}
+@keyframes imgAnimation {
+  from {
+    opacity: 20%;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+
+  to {
+    opacity: 100%;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+}

@@ -1,0 +1,11 @@
+.star-container {
+  display: flex;
+  margin-top: 21px;
+  column-gap: 5px;
+  @media (max-width: 800px) {
+    margin-top: 0px;
+    img {
+      width: 18px;
+    }
+  }
+}

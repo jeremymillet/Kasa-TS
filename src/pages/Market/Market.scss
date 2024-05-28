@@ -1,0 +1,84 @@
+@import "../../styles/main.scss";
+.info-container {
+  display: flex;
+  width: 90%;
+  color: $main-color;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+.title-container {
+  margin-bottom: 20px;
+  h1 {
+    font-size: 36px;
+    margin: 0px;
+    @media (max-width: 800px) {
+      font-size: 18px;
+    }
+  }
+  h2 {
+    color:$dark-color;
+    font-size: 18px;
+    margin: 0px;
+    @media (max-width: 800px) {
+      order: 2;
+      font-size: 14px;
+    }
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.profil {
+  &-container {
+    display: flex;
+    @media (max-width: 800px) {
+      order: 2;
+      font-size: 12px;
+    }
+  }
+  &-name {
+    width: 93px;
+    display: flex;
+    text-align: right;
+    margin-right: 10px;
+  }
+  &-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    @media (max-width: 800px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 24px;
+  @media (max-width: 800px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+}
+
+.collapse-container {
+  display: flex;
+  width: 90%;
+  column-gap: 76px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}

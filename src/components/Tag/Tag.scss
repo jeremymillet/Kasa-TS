@@ -1,0 +1,28 @@
+@import "../../styles/main.scss";
+
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 37px;
+    border-radius: 10px;
+    color: $text-color;
+    background-color: $main-color;
+    margin-right: 10px;
+    list-style: none;
+    @media (max-width:800px) {
+        padding: 2px 27px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    
+    &-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        padding: 0px;
+        margin: 0px;
+    }
+}

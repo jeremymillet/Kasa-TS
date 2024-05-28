@@ -1,0 +1,29 @@
+@import '../../styles/main.scss';
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $dark-color;
+    color: $text-color;
+    height: 209px;
+    &-img{
+        width: 122px;
+        height: 40px;
+    }
+    &-text{
+        font-size:24px;
+        font-weight: 500;
+    }
+    @media (max-width: 800px) {
+        justify-content: center;
+        &-text {
+                font-size: 12px;
+                text-align: center;
+                width: 130px;
+            }
+        
+    }
+}
