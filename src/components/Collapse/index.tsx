@@ -8,7 +8,6 @@ type CollapsePropsType = PropsWithChildren<{
 }>;
 
 const Collapse: React.FC<CollapsePropsType> = ({ title, children, className }) => {
-  console.log(children);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggle = () => {
    setIsOpen((state) => !state)

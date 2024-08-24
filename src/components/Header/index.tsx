@@ -9,7 +9,10 @@ interface HeaderPropsType {
 const Header: React.FC<HeaderPropsType> = ({ from }) => {
     return (
       <header className="header-container">
-        <img className="header-img" src={Logo} alt="Logo du site kasa" />
+        <Link to={"/"}>
+          <img className="header-img" src={Logo} alt="Logo du site kasa" />
+        </Link>
+
         <nav>
           <Link
             className={`nav-item ${from === "home" ? "selected" : ""}`}
