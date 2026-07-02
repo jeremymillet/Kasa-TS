@@ -163,12 +163,7 @@ Des captures de l'application seront ajoutées prochainement.
 ---
 
 # 🚀 Évolutions prévues
-
-- 🔍 Recherche de logements
-- ❤️ Gestion des favoris
-- 🗺️ Carte interactive
 - 🌙 Mode sombre
-- 🧪 Amélioration de la couverture de tests
 
 ---
 
