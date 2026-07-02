@@ -1,30 +1,181 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏠 Kasa
 
-Currently, two official plugins are available:
+Application web développée avec **React**, **TypeScript** et **Vite** permettant de consulter des annonces immobilières.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Le projet met en œuvre une architecture moderne basée sur des composants réutilisables, le routage avec React Router et une interface responsive.
 
-## Expanding the ESLint configuration
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+</div>
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+# 📖 Présentation
+
+Kasa est une application web de location immobilière développée avec React et TypeScript.
+
+Le projet met l'accent sur la création d'une interface moderne, la navigation entre les pages et la conception de composants réutilisables.
+
+Cette application a été réalisée afin d'approfondir les bonnes pratiques de développement avec React, TypeScript et React Router.
+
+---
+
+# 🎯 Objectifs
+
+Ce projet m'a permis de mettre en pratique :
+
+- Développement d'une Single Page Application (SPA)
+- React et TypeScript
+- Routage avec React Router
+- Conception de composants réutilisables
+- Gestion des props
+- Organisation d'une architecture Frontend
+- Responsive Design
+
+---
+
+# ✨ Fonctionnalités
+
+- 🏠 Affichage des logements
+- 📄 Consultation de la fiche d'un logement
+- 🖼️ Galerie d'images (Carousel)
+- ⭐ Affichage de la note du logement
+- 🏷️ Gestion des tags
+- 📖 Sections déroulantes (Collapse)
+- 🚫 Page 404 personnalisée
+- 📱 Interface responsive
+
+---
+
+# 🏗️ Architecture
+
+```text
+            React Application
+
+        Pages
+
+        ├── Home
+        ├── About
+        ├── Market
+        └── Error
+
+              │
+
+         Components
+
+        ├── Card
+        ├── Carousel
+        ├── Collapse
+        ├── Header
+        ├── Footer
+        ├── Hero
+        ├── Star
+        └── Tag
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+# 🛠️ Stack technique
+
+## Frontend
+
+- React 18
+- TypeScript
+- Vite
+- React Router
+
+## Outils
+
+- Git
+- VS Code
+- npm
+
+---
+
+# 📂 Structure du projet
+
+```text
+src
+
+├── components
+│   ├── Card
+│   ├── Carousel
+│   ├── Collapse
+│   ├── Footer
+│   ├── Header
+│   ├── Hero
+│   ├── Star
+│   └── Tag
+│
+├── pages
+│   ├── Home
+│   ├── About
+│   ├── Market
+│   └── Error
+│
+├── types
+├── Router.tsx
+├── App.tsx
+└── main.tsx
+```
+
+Le projet est organisé autour de composants réutilisables afin de favoriser la maintenabilité et la lisibilité du code.
+
+---
+
+# 🚀 Installation
+
+## Cloner le projet
+
+```bash
+git clone https://github.com/jeremymillet/Kasa-TS.git
+```
+
+## Installer les dépendances
+
+```bash
+npm install
+```
+
+## Lancer le projet
+
+```bash
+npm run dev
+```
+
+L'application est accessible sur :
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📸 Captures d'écran
+
+Des captures de l'application seront ajoutées prochainement.
+
+---
+
+# 🚀 Évolutions prévues
+
+- 🔍 Recherche de logements
+- ❤️ Gestion des favoris
+- 🗺️ Carte interactive
+- 🌙 Mode sombre
+- 🧪 Amélioration de la couverture de tests
+
+---
+
+# 👨‍💻 Auteur
+
+**Jérémy Millet**
+
+Développeur Full Stack
+
+📫 À la recherche d'un poste de développeur Backend / Full Stack.
